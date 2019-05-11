@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="scheduler.jnlp">
+  <information>
+    <title>scheduler</title>
+    <vendor>Benjamin</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\log4j-1.2.16.jar" size="481535" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.45-bin.jar" size="999810" download="eager" />
+    <jar href="lib\slf4j-api-1.6.6.jar" size="26176" download="eager" />
+    <jar href="scheduler.jar" size="55376" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="scheduler" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="Scheduler"  name="scheduler" />
+  <update check="always"/>
+</jnlp>
